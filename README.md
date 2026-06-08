@@ -119,3 +119,7 @@ productivity-haven/
 - Cloud Sync
 - Custom Themes
 - Data Export
+## Future Improvements
+- Drag and drop tasks
+- Progressive Web App (PWA) support
+- User accounts and cloud sync
