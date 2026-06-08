@@ -93,3 +93,29 @@ productivity-haven/
 ├── 📄 script.js            # Main engine handling sound routing, timers, and state logic
 ├── 📄 .gitignore           # Cleans up track lists and system files from tracking
 └── 📄 README.md            # Project documentation and feature walkthrough
+
+## ✨ Features
+
+- User Authentication
+- Task Management
+- Pomodoro Timer
+- Habit Tracking
+- Mood Journal
+- Ambient Soundscapes
+- Productivity Analytics
+- Responsive Design
+## 🛠️ Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- Local Storage
+- Vercel
+- Git & GitHub
+## 🚀 Future Improvements
+
+- Dark Mode
+- Calendar Integration
+- Cloud Sync
+- Custom Themes
+- Data Export
