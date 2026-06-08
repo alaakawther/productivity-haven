@@ -13,56 +13,102 @@ Most productivity apps feel clinical and overwhelming. I wanted to build a works
 
 ## 📸 App Walkthrough & Features
 
-### 🏠 The Dashboard & Welcome Screen
-A welcoming gateway that tracks daily goals, provides motivational boosts, and manages your ambient soundscapes seamlessly.
-![Welcome Screen](assets/login.png)
-![Dashboard Overview](assets/dashboard.png)
+All screens and modules are designed with a uniform, warm cherry-blossom aesthetic to ensure a cohesive user experience.
 
-### 📋 Task Management & Single-Task Focus
-An interactive task manager to organize priorities, coupled with a clean "Focus Mode" view that removes layout clutter so you can work on one thing at a time.
-![Task Manager Interface](assets/tasks.png)
-![Distraction-Free Focus Mode](assets/focus.png)
+<table>
+  <tr>
+    <th width="50%">🔑 Authentication & Entry</th>
+    <th width="50%">🏠 Core Interface</th>
+  </tr>
+  <tr>
+    <td>
+      <p align="center"><b>Login Screen</b></p>
+      <img src="image/The Login Screen.png" alt="Login Screen" width="100%">
+      <p><i>Secure entry portal for saved personalized user preferences.</i></p>
+    </td>
+    <td>
+      <p align="center"><b>Main Dashboard Overview</b></p>
+      <img src="image/The main Dashboard Overview.png" alt="Main Dashboard Overview" width="100%">
+      <p><i>The central hub tracking your daily goals and quick-actions.</i></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p align="center"><b>Registration Screen</b></p>
+      <img src="image/The Registration Screen.png" alt="Registration Screen" width="100%">
+      <p><i>Clean onboarding interface for new user creation.</i></p>
+    </td>
+    <td>
+      <p align="center"><b>Main Dashboard Overview 2</b></p>
+      <img src="image/The main Dashboard Overview 2.png" alt="Main Dashboard Overview 2" width="100%">
+      <p><i>Expanded modular dashboard layout tracking secondary metrics.</i></p>
+    </td>
+  </tr>
+</table>
 
-### 🍅 Pomodoro Timer
-A minimal, intent-driven countdown timer built with structural intervals for focused work sprints and short or long breaks.
-![Pomodoro Timer Interface](assets/pomodoro.png)
+<table>
+  <tr>
+    <th width="50%">📋 Focus & Task Management</th>
+    <th width="50%">💫 Habit Building & Self-Care</th>
+  </tr>
+  <tr>
+    <td>
+      <p align="center"><b>Task Manager Panel</b></p>
+      <img src="image/The Task Manager Panel.png" alt="Task Manager" width="100%">
+      <p><i>An interactive tracker to organize priorities and checklists.</i></p>
+    </td>
+    <td>
+      <p align="center"><b>Habits Tracker Panel</b></p>
+      <img src="image/The Habits Tracker panel.png" alt="Habits Tracker" width="100%">
+      <p><i>Keep consistency alive with daily streak completions.</i></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p align="center"><b>Focus Mode View</b></p>
+      <img src="image/The Focus Mode view.png" alt="Focus Mode View" width="100%">
+      <p><i>A distraction-free view isolating your single most critical objective.</i></p>
+    </td>
+    <td>
+      <p align="center"><b>Mood Journal Screen</b></p>
+      <img src="image/The Mood Journal screen.png" alt="Mood Journal" width="100%">
+      <p><i>Log emotional states over time to practice daily mindfulness.</i></p>
+    </td>
+  </tr>
+</table>
 
-### 💫 Habit Building & Self-Care
-Keep consistency alive with a dynamic habit tracker, and use the mini mood journal to log your emotional well-being and review weekly progress metrics.
-![Habit Tracking Panel](assets/habits.png)
-![Mood Tracker & Journaling](assets/mood.png)
+<table>
+  <tr>
+    <th width="50%">🍅 Time Management</th>
+    <th width="50%">📊 Analytics & Progress</th>
+  </tr>
+  <tr>
+    <td>
+      <p align="center"><b>Pomodoro Timer Tab</b></p>
+      <img src="image/The Pomodoro Timer tab.png" alt="Pomodoro Timer" width="100%">
+      <p><i>Intent-driven custom countdown timer for focused work sprints.</i></p>
+    </td>
+    <td>
+      <p align="center"><b>Statistics & History Panel</b></p>
+      <img src="image/The Statistics & History panel.png" alt="Statistics & History" width="100%">
+      <p><i>Review weekly productivity trends and compiled execution metrics.</i></p>
+    </td>
+  </tr>
+</table>
 
 ---
 
-### 🗂️ How the Code is Organized
-Unlike heavy framework setups, this app is built to be fast, lightweight, and easy to read:
+### 🗺️ Project Architecture Map
+Unlike heavy framework setups, this app is built to be fast, lightweight, modular, and easy to read. Here is how the source tree is organized:
 
-* `index.html` — Handles the layouts and views for the dashboard modules.
-* `style.css` — Controls the custom cherry-blossom theme variables and responsive interfaces.
-* `script.js` — Coordinates the audio player routing, task priorities, and timer states.
-* `sounds/` — Storage directory holding the ambient loopable `.mp3` tracks.
-* `assets/` — Application preview assets and documentation images.
-
----
-
-### 🚀 Running the Project Locally
-Because modern web browsers block background audio from playing directly from a local file path, you'll need to open the project using a simple local environment link.
-
-**Using VS Code (Easiest)**
-1. Install the **Live Server** extension from the marketplace.
-2. Right-click your `index.html` file and select **Open with Live Server**.
-
-**Using the Command Line**
-If you prefer the terminal, run either of these inside the project folder:
-* Python: `python -m http.server 8080` (then go to `http://localhost:8080`)
-* Node.js: `npx serve .`
-
----
-
-### 🛠️ The Tech Behind It
-* **Languages:** Semantic HTML5, responsive CSS3 using custom properties, and modern Vanilla JavaScript (ES6+).
-* **Hosting:** Deployed instantly using Vercel, hooked up to automatically update whenever I push changes to GitHub.
-
----
-
-Made with 🩷 by **Alaa Kawther Zaiter**
+```text
+productivity-haven/
+│
+├── 📁 image/               # Application preview screenshots used in documentation
+├── 📁 sounds/              # Internal storage holding loopable ambient background tracks (.mp3)
+│
+├── 📄 index.html           # Core skeleton structuring the dashboard views and modules
+├── 📄 style.css            # Custom cherry-blossom variable themes & responsive interfaces
+├── 📄 script.js            # Main engine handling sound routing, timers, and state logic
+├── 📄 .gitignore           # Cleans up track lists and system files from tracking
+└── 📄 README.md            # Project documentation and feature walkthrough
