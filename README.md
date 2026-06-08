@@ -85,7 +85,7 @@ Unlike heavy framework setups, this app is built to be fast, lightweight, modula
 ```text
 productivity-haven/
 │
-├── 📁 image/               # Application preview screenshots used in documentation
+├── 📁 screenshots/               # Application preview screenshots used in documentation
 ├── 📁 sounds/              # Internal storage holding loopable ambient background tracks (.mp3)
 │
 ├── 📄 index.html           # Core skeleton structuring the dashboard views and modules
