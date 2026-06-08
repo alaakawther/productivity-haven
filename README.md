@@ -96,8 +96,6 @@ All screens and modules are designed with a uniform, warm cherry-blossom aesthet
   </tr>
 </table>
 
----
-
 ### 🗺️ Project Architecture Map
 Unlike heavy framework setups, this app is built to be fast, lightweight, modular, and easy to read. Here is how the source tree is organized:
 
